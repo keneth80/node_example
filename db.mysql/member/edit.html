@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Update Member Page</title>
+</head>
+
+<body>
+	<h1 align="center">Update Member Page</h1>
+	<form method='post'>
+		<fieldset>
+			<legend>UPDATE MEMBER</legend>
+			<table>
+				<tr>
+					<td>
+						<lable>Uid</lable>
+					</td>
+					<td><input type="text" name="uid" value="<%= member.uid  %>" style="background-color: #e2e2e2;" readonly/></td>
+				</tr>
+				<tr>
+					<td>
+						<lable>Id</lable>
+					</td>
+					<td><input type="text" name="m_id" value="<%= member.m_id  %>" /></td>
+				</tr>
+				<tr>
+					<td>
+						<lable>Name</lable>
+					</td>
+					<td><input type="text" name="m_name" value="<%= member.m_name %>" /></td>
+				</tr>
+				<tr>
+					<td>
+						<lable>Birthday</lable>
+					</td>
+					<td><input type="text" name="m_birth" value="<%= member.m_birth %>" /></td>
+				</tr>
+				<tr>
+					<td>
+						<lable>Sex</lable>
+					</td>
+					<td><input type="text" name="sex" value="<%= member.sex %>" /></td>
+				</tr>
+				<tr>
+					<td>
+						<lable>Mobile</lable>
+					</td>
+					<td><input type="text" name="m_mobile" value="<%= member.m_mobile %>" /></td>
+				</tr>
+				<tr>
+					<td>
+						<lable>E-mail</lable>
+					</td>
+					<td><input type="text" name="m_email" value="<%= member.m_email %>" /></td>
+				</tr>
+				<tr>
+					<td>
+						<lable>Address</lable>
+					</td>
+					<td><input type="text" name="m_address" value="<%= member.m_address %>" /></td>
+				</tr>
+				<tr>
+					<td>
+						<lable>Del_yn</lable>
+					</td>
+					<td><input type="text" name="m_del_yn" value="<%= member.m_del_yn %>" /></td>
+				</tr>
+			</table>
+			<input type="submit" value="Update" />
+		</fieldset>
+	</form>
+</body>
+
+</html>
